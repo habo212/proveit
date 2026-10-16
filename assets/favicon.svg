@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .bg { fill: #EDEEF0; } .t1 { stroke: #0E1012; } .t2 { stroke: #1B3AC7; }
+    @media (prefers-color-scheme: dark) { .bg { fill: #16181B; } .t1 { stroke: #F2F3F5; } .t2 { stroke: #6E86FF; } }
+  </style>
+  <rect class="bg" width="100" height="100" rx="22"/>
+  <g transform="translate(50 50) scale(1.12) translate(-49 -47)" fill="none" stroke-width="8">
+    <polyline class="t1" points="20,52 32,64 58,34"/>
+    <polyline class="t2" points="45,61 48,64 78,30"/>
+  </g>
+</svg>
