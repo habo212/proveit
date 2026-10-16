@@ -74,10 +74,11 @@
               <tbody>
                 <tr><td data-label="What">Apple Health readings</td><td data-label="Where it lives"><span class="tag tag--phone">Phone only</span></td><td data-label="Who can see it">You. Friends see “counted”, never the numbers.</td></tr>
                 <tr><td data-label="What">Your location</td><td data-label="Where it lives"><span class="tag tag--phone">Phone only</span></td><td data-label="Who can see it">Nobody. Used only to check you’re at the place you picked.</td></tr>
+                <tr><td data-label="What">The place you pick for a habit</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">You. Whoever checks a proof there sees the place’s name and how far away you were.</td></tr>
                 <tr><td data-label="What">Your contacts</td><td data-label="Where it lives"><span class="tag tag--phone">Phone only</span></td><td data-label="Who can see it">Nobody. Only the one contact you pick is read, to fill in a name.</td></tr>
                 <tr><td data-label="What">Account and profile</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">You, and the people you connect with.</td></tr>
                 <tr><td data-label="What">Proof photos</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">You, and the referee or group you point a commitment at.</td></tr>
-                <tr><td data-label="What">Commitments and history</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">You. Friends see one line a week, never the stake.</td></tr>
+                <tr><td data-label="What">Commitments and history</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">You. Friends see one line a week, and the stake only in a challenge you share.</td></tr>
                 <tr><td data-label="What">Nudges and group threads</td><td data-label="Where it lives"><span class="tag tag--server">Server</span></td><td data-label="Who can see it">The people in that thread.</td></tr>
               </tbody>
             </table>
@@ -95,7 +96,7 @@
           <p>These are read on your iPhone and are never sent to us or to anyone else:</p>
           <ul>
             <li><strong>Apple Health.</strong> If you connect it, ProveIt reads the workouts, runs, sleep and weigh-ins your commitments need, so a session can count on its own. The readings stay on the phone. What leaves is only that a session was counted.</li>
-            <li><strong>Location.</strong> If you pick a place for a habit, ProveIt checks your phone is there when you tap “I’m here” or take a photo. Only while you’re using the app, and the location itself is never uploaded.</li>
+            <li><strong>Location.</strong> If you pick a place for a habit, ProveIt checks your phone is there when you tap “I’m here” or take a photo. Only while you’re using the app, and where your phone is never leaves it. The place you picked is part of your commitment, so it’s kept in your backup (see below).</li>
             <li><strong>Contacts.</strong> If you choose a friend from your contacts, ProveIt reads that one contact to fill in their name. Nothing else in your address book is read.</li>
             <li><strong>Alarms and reminders.</strong> ProveIt’s wake-up alarm and its reminders are scheduled on the phone.</li>
           </ul>
@@ -112,8 +113,8 @@
           </ul>
           <h3>Your commitments</h3>
           <ul>
-            <li>A backup of what you set up and how it went: habits, targets, stakes (practice money), settled weeks, and any weigh-ins you type in yourself.</li>
-            <li>Your proofs: the photo, when it was taken, which habit it was for, how it was proved (camera, tap or Apple Health), and the verdicts and any appeal.</li>
+            <li>A backup of what you set up and how it went: habits, targets, stakes (practice money), settled weeks, any place you picked for a habit (its name, address and spot on the map), and any weigh-ins you type in yourself.</li>
+            <li>Your proofs: the photo, when it was taken, which habit it was for, how it was proved (camera, tap or Apple Health), and the verdicts and any appeal. For a proof at the place you picked, the verdict says how far from it your phone was.</li>
           </ul>
           <h3>Your friends and groups</h3>
           <ul>
@@ -121,10 +122,11 @@
           </ul>
           <h3>Running the service</h3>
           <ul>
-            <li>Your device’s push token, so notifications can reach your phone.</li>
+            <li>Your device’s push token, so notifications can reach your phone, and the device type (“iPhone”) saved with your backup.</li>
             <li>Short-lived counters of how often an account does certain things, like sending nudges, so nobody can spam or abuse the service.</li>
+            <li>Our hosting provider’s request logs, which include your IP address. They’re used to keep the service secure and to fix problems, and they’re deleted automatically within days.</li>
           </ul>
-          <div class="callout"><p><strong>Why we’re allowed to.</strong> We use this data to provide the service you ask for (GDPR Art. 6(1)(b)), and keep abuse counters because we have a legitimate interest in keeping ProveIt safe (Art. 6(1)(f)). A weigh-in is health information, so we keep it, and send it for the photo check, only with your explicit consent (Art. 9(2)(a)). You give that consent by entering it, and you can withdraw it at any time by deleting your account.</p></div>
+          <div class="callout"><p><strong>Why we’re allowed to.</strong> We use this data to provide the service you ask for (GDPR Art. 6(1)(b)), and keep abuse counters and request logs because we have a legitimate interest in keeping ProveIt safe and working (Art. 6(1)(f)). A weigh-in is health information, so we keep it, and send it for the photo check, only with your explicit consent (Art. 9(2)(a)). You give that consent by entering it, and you can withdraw it at any time by deleting your account.</p></div>
         </section>
 
         <section id="photos">
@@ -141,9 +143,11 @@
             <li>Your name and profile photo.</li>
             <li>One line about your week: the habit name and how many sessions you’ve done out of how many.</li>
             <li>The proof photos of any commitment you point at them, so they can make the call on one. For a weigh-in commitment, that’s the photo of your scale, number included.</li>
+            <li>For a proof at the place you picked, the place’s name and how far from it your phone was.</li>
+            <li>In a challenge, its terms: the stake and where the money goes. Everyone in it agrees to the same ones.</li>
             <li>The nudges, cheers and photos in the threads you share.</li>
           </ul>
-          <p>They never see what you staked, your balance, your Apple Health numbers or your location.</p>
+          <p>Outside a challenge, they never see what you staked. They never see your balance, your Apple Health numbers or where your phone is.</p>
         </section>
 
         <section id="providers">
@@ -153,7 +157,7 @@
             <table class="ledger">
               <thead><tr><th>Provider</th><th>What for</th><th>Where</th></tr></thead>
               <tbody>
-                <tr><td data-label="Provider">Supabase</td><td data-label="What for">Database, photo storage, sign-in and server functions</td><td data-label="Where">EU (Ireland)</td></tr>
+                <tr><td data-label="Provider">Supabase</td><td data-label="What for">Database, photo storage, sign-in, server functions and request logs</td><td data-label="Where">EU (Ireland)</td></tr>
                 <tr><td data-label="Provider">Anthropic</td><td data-label="What for">Checking proof photos</td><td data-label="Where">United States</td></tr>
                 <tr><td data-label="Provider">Apple</td><td data-label="What for">Sign in with Apple, push notifications, TestFlight</td><td data-label="Where">Under Apple’s own privacy policy</td></tr>
               </tbody>
@@ -179,7 +183,7 @@
           <p>We keep your data for as long as you have an account.</p>
           <p><strong>Settings → Delete account</strong> deletes your account at once: every commitment, proof photo and week, on your phone and on our server, and everything your friends could see of you. It can’t be undone. Friends who had invited you keep the name they typed for you, with nothing of yours behind it.</p>
           <p><strong>Settings → Sign out</strong> is different: your phone forgets everything, and your account keeps it for when you sign back in.</p>
-          <p>A deleted account can survive in our hosting provider’s routine backups for a short time, until those backups are replaced. Abuse counters keep only a running count per action, and the record of which notifications were sent is deleted after 30 days.</p>
+          <p>A deleted account can survive in our hosting provider’s routine backups for a short time, until those backups are replaced. Abuse counters keep only a running count per action, the record of which notifications were sent is deleted after 30 days, and request logs are deleted within days.</p>
         </section>
 
         <section id="rights">
